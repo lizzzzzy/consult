@@ -1,0 +1,14 @@
+.navigation {
+	list-style: none;
+	display: flex;
+	&__link {
+		font-family: $lora-font;
+		font-size: 18px;
+		font-weight: 400;
+		color: #fff;
+		margin-right: 80px;
+	}
+	li:last-child a {
+		margin-right: 0;
+	}
+}

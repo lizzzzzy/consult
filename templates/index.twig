@@ -1,0 +1,19 @@
+{% extends "core/layout.twig" %}
+{% set title = "Perkulimov Consult Group" %}
+{% set class = "frontpage" %}
+
+{% block body %}
+  <input type="radio" class="slide-btn" id="btn-1" name="toggle" checked >
+  <input type="radio" class="slide-btn" id="btn-2" name="toggle">
+  <input type="radio" class="slide-btn" id="btn-3" name="toggle">
+	<div class="site-wrapper">
+  {% include 'modules/header.twig' %}
+  {% include 'frontpage/seminar-slider.twig' %}
+  {% include 'frontpage/modules.twig' %}
+  {% include 'frontpage/advantages.twig' %}
+  {% include 'frontpage/team.twig' %}
+  {% include 'frontpage/partners.twig' %}
+  {% include 'blocks/advice-form.twig' %}
+  {% include 'modules/footer.twig' %}
+  </div>
+{% endblock %}

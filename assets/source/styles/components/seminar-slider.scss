@@ -1,0 +1,69 @@
+.seminar-slider {
+  position: relative;
+  input {
+    display: none;
+  }
+}
+// работа слайдера
+.controls {
+  position: absolute;
+  bottom: 200px;
+  right: 120px;
+  z-index: 20;
+  font-size: 0;
+}
+.controls label {
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-bottom: 25px;
+  vertical-align: top;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+#btn-2:checked ~ .site-wrapper {}
+#btn-3:checked ~ .site-wrapper {
+  background-image: url("http://ourworkspace.ru/glacy/slide-1.png");
+}
+#btn-1:checked ~ .site-wrapper {
+  background-image: url("../img/gl_banner.jpg");
+}
+#btn-1:checked ~ .site-wrapper label[for="btn-1"]:after {
+  content: '01';
+  margin-top: -20px;
+}
+#btn-2:checked ~ .site-wrapper label[for="btn-2"]:after {
+  content: '02';
+  margin-top: -15px;
+}
+#btn-3:checked ~ .site-wrapper label[for="btn-3"]:after {
+  content: '03';
+}
+#btn-1:checked ~ .site-wrapper label[for="btn-1"]:after,
+#btn-2:checked ~ .site-wrapper label[for="btn-2"]:after,
+#btn-3:checked ~ .site-wrapper label[for="btn-3"]:after {
+  font-family: $lora-font;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: -10px;
+  display: inline-block;
+}
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: transparent;
+}
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+.slide-btn {
+  display: none;
+}
+.site-wrapper {
+  background-repeat: no-repeat;
+  background-size: contain;
+}

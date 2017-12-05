@@ -1,0 +1,9 @@
+header .container {
+	max-width: 1800px;
+}
+.container {
+	max-width: 1485px;
+	margin: 0 auto;
+	position: relative;
+	width: calc(100% - 70px);
+}

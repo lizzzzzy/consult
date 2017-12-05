@@ -1,0 +1,54 @@
+.modul-item {
+	color: #fff;
+	padding-top: 100px;
+	padding-left: 22px;
+	padding-right: 110px;
+	padding-bottom: 60px;
+	background-color: $gold;
+	height: 100%;
+	background-size: cover;
+	&__desc {
+		color: $gold;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		margin-bottom: 32px;
+	}
+	&__heading {
+		font-size: 22px;
+		font-weight: 700;
+		font-family: $lora-font;
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 400;
+		margin-bottom: 40px;
+		strong {
+			font-weight: 700;
+		}
+	}
+	&__link {
+		color: #fff;
+		font-family: $lora-font;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+		&:after {
+			content: url(../img/arrow-white.svg);
+		}
+	}
+	&--more-info {
+		padding-top: 40px;
+		padding-bottom: 60px;
+		padding-right: 45px;
+		.modul-item__link {
+			color: $gold;
+			&:after {
+				content: url(../img/arrow-gold.svg);
+			}
+		}
+	}
+}

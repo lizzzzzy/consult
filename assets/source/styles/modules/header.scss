@@ -1,0 +1,30 @@
+.header {
+	padding-top: 48px;
+	padding-bottom: 50px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav{
+			margin-left: 150px;
+			max-width: 80%;
+	}
+	&__logo {
+		color: $gold;
+		font-family: "Vogue Highline Serif";
+		font-size: 20px;
+		font-weight: 500;
+		align-content: center;
+		align-items: center;
+		display: flex;
+//		padding-left: 88px;
+		max-width: 248px;
+		text-align: left;
+		img{
+			margin-top: -25px;
+			margin-right: 15px;
+		}
+	}
+	.navigation {}
+	&__contacts {}
+}

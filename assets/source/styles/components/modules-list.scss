@@ -1,0 +1,14 @@
+.modules-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	text-align: left;
+	&__item {
+		width: 32%;
+		margin-bottom: 26px;
+		&--big {
+			width: 66%;
+		}
+	}
+}
