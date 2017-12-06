@@ -6,13 +6,13 @@
 		justify-content: space-between;
 	}
 	nav{
-			margin-left: 150px;
-			max-width: 80%;
+			margin-left: 4vw;
+			max-width: 70%;
 	}
 	&__logo {
 		color: $gold;
 		font-family: "Vogue Highline Serif";
-		font-size: 20px;
+		font-size: $default-font-size;
 		font-weight: 500;
 		align-content: center;
 		align-items: center;

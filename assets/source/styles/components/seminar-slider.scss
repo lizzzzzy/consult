@@ -1,14 +1,11 @@
 .seminar-slider {
   position: relative;
-  input {
-    display: none;
-  }
 }
 // работа слайдера
 .controls {
   position: absolute;
-  bottom: 200px;
-  right: 120px;
+  bottom: 90px;
+  right: 135px;
   z-index: 20;
   font-size: 0;
 }
@@ -23,12 +20,14 @@
   cursor: pointer;
   background-color: #fff;
 }
-#btn-2:checked ~ .site-wrapper {}
-#btn-3:checked ~ .site-wrapper {
-  background-image: url("http://ourworkspace.ru/glacy/slide-1.png");
-}
 #btn-1:checked ~ .site-wrapper {
   background-image: url("../img/gl_banner.jpg");
+}
+#btn-2:checked ~ .site-wrapper {
+  //    background-image: url("../img/gl_banner.jpg");
+}
+#btn-3:checked ~ .site-wrapper {
+  //   background-image: url("../img/gl_banner.jpg");
 }
 #btn-1:checked ~ .site-wrapper label[for="btn-1"]:after {
   content: '01';
@@ -45,7 +44,7 @@
 #btn-2:checked ~ .site-wrapper label[for="btn-2"]:after,
 #btn-3:checked ~ .site-wrapper label[for="btn-3"]:after {
   font-family: $lora-font;
-  font-size: 24px;
+  font-size: $big-font-size;
   font-weight: 500;
   margin-left: -10px;
   display: inline-block;

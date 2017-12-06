@@ -1,1 +1,39 @@
-.advantages-list{}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 118px;
+  li {
+    width: 45%;
+    padding-left: 11%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  &__heading {
+    font-family: $lora-font;
+    color: $gold;
+    font-size: $button-font-size;
+    font-weight: 400;
+    margin-bottom: 35px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -7vw;
+      top: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAAdklEQVQ4T2NkIAJMKPW4y/CfQQmilLGioGd7Jz5tjESYyTBq6GiYkpCk+kvcXRgZGHcTk7SIUsPIcI+RNoYWeisxMv8Lxe+K/+UMDAyC4PzEwLDnPwPjntEchTMERgsUwkmaNuVpiSconYLBf4Z/Zwt7duJNpwCkFm4sLRYhPwAAAABJRU5ErkJggg==);
+    }
+  }
+  &__text {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

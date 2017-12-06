@@ -1,1 +1,19 @@
-.team-list{}
+.team-list {
+  list-style: none;
+  margin-top: 125px;
+  li {
+    display: flex;
+    margin-bottom: 77px;
+    font-size: $big-font-size;
+  }
+  &__img {
+    margin-right: 45px;
+    img {}
+  }
+  &__text {
+    margin-top: 27px;
+    p {
+      margin-bottom: 28px;
+    }
+  }
+}

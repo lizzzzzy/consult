@@ -1,0 +1,23 @@
+.social{
+  list-style: none;
+  display: flex;
+  &__link{
+    font-size: 0;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 33px;
+    background-size: contain;
+    &--youtube{
+      background-image: url(../img/icons_yt.png);
+    }
+    &--facebook{
+            background-image: url(../img/icons_fb.png);
+    }
+    &--in{
+            background-image: url(../img/icons_in.png);
+    }
+  }
+}

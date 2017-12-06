@@ -1,1 +1,10 @@
-.partners-slider{}
+.partners-slider{
+  display: flex;
+  list-style: none;
+  &__item{
+    max-width: 336px;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+}

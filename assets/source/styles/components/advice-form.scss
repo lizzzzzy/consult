@@ -1,1 +1,59 @@
-.advice-form{}
+.advice-form {
+  margin-top: 200px;
+  margin-bottom: 118px;
+  text-align: left;
+  padding-left: 12%;
+  .main-heading {
+    margin-bottom: 77px;
+  }
+  &__input {
+    margin-right: 42px;
+    width: 50%;
+    &--name {}
+    &--phone {
+      margin-right: 0;
+    }
+    &--email {}
+  }
+  &__button {
+    width: auto;
+  }
+}
+.input {
+  border: none;
+  background-color: transparent;
+  max-width: 417px;
+  font-family: $lora-font;
+  font-size: $big-font-size;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 26px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.button {
+  font-family: $lora-font;
+  color: $gold;
+  font-size: $button-font-size;
+  font-weight: 400;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  max-width: 417px;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 0.8;
+  text-align: left;
+  margin-bottom: 40px;
+  &:after {
+    content: '';
+    display: block;
+    width: 93px;
+    height: 17px;
+    position: absolute;
+    right: -125px;
+    top: 6px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAARCAYAAABU3BvXAAAA1klEQVRYR+3YsQ3CMBAF0PvZgFkoaaFjgWQAkJiASUBhAMQAIAp6OlZgBSYIFxkJ0ZD4kO5o8j3AP+n5y7IN4XITOG6qcVHoBZB702A2X+0fXeFwm8ogOW3LhD5NFIDc+vAJ71iYd+NFZJTDJ7wjfIqy4hPeGd6KT/gAeAs+4YPgc/hQFVwPy2fg/IFGq07KXdF15rPxf6jFua4Wqlp/RmFN+GB4Nj4Y+Ft839WSjQ/akNx9nvAB8Dn016s2YO6gIy3ohHeuiBWd8M7w/J10BrXG/fIf3wJ/pZebWFOPGwAAAABJRU5ErkJggg==);
+  }
+}
