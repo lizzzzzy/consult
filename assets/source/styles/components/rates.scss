@@ -1,0 +1,81 @@
+.rates {
+  background-color: #131313;
+  padding-top: 73px;
+  padding-bottom: 105px;
+  .main-heading {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  &__subheading {
+    font-size: 0.9vw;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  &__wrap {
+    display: flex;
+    max-width: 84%;
+    margin: 0 auto;
+    margin-top: 66px;
+    margin-bottom: 59px;
+  }
+  &__item {}
+  &__btn{
+    font-size: 1vw;
+    font-weight: 400;
+    color: $gold;
+    font-family: $lora-font;
+    position: relative;
+    border: 1px solid $gold;
+    padding-right: 113px;
+    padding-left: 46px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    &:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 7px;
+      position: absolute;
+      right: 42px;
+      top: 50%;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAHCAYAAAAWAl2LAAAAcklEQVQoU2NkoAGYVuEt+OvP37v/Gf6HFfbs3AOygpEG9oCNnFDiWc7A8L/jP8N/V5BlNLMI3TKwRb0l3v9p5TNmhn9nGRj+K9HUR/2lHjMZ/zOEMv7/50ozi5Atye/ddZYmFkFS3b/djP//poMsAUULAAnENE1aSW3iAAAAAElFTkSuQmCC);
+    }
+  }
+}
+.rate-item {
+  position: relative;
+  padding: 17px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.3;
+  }
+  &:last-child:after {
+    display: none;
+  }
+  &__img {
+    margin-bottom: 53px;
+  }
+  &__heading {
+    font-size: $default-font-size;
+    margin-bottom: 25px;
+    &--gold {
+      color: $gold;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: $small-font-size;
+    margin-bottom: 8px;
+  }
+}

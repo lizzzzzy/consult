@@ -1,0 +1,14 @@
+{% extends "core/layout.twig" %}
+{% set title = "Perkulimov Consult Group" %}
+{% set class = "fin-plan" %}
+
+{% block body %}
+  {% include 'modules/header.twig' with {class: 'header--black'} %}
+  {% include 'blocks/banner.twig' with {image: 'assets/frontend/img/fin-plan/fin-plan_banner.jpg', heading:'Личный финансовый план', text: 'Личный финансовый план – это фундамент принятия любых финансовых решений'}%}
+  {% include 'fin-plan/services.twig' %}
+  {% include 'fin-plan/rates.twig' %}
+  {% include 'fin-plan/points.twig' %}
+  {% include 'fin-plan/how-work.twig' %}
+  {% include 'blocks/advice-form.twig' %}
+  {% include 'modules/footer.twig' %}
+{% endblock %}

@@ -1,13 +1,28 @@
-.about {
+.about,
+.fin-plan {
   .main-heading {
     font-size: $button-font-size;
     font-weight: 400;
   }
-  .partners .main-heading{
+  .partners .main-heading {
     margin-bottom: 90px;
   }
-  .advice-form{
+  .advice-form {
     margin-top: 105px;
     margin-bottom: 100px;
+  }
+}
+.fin-plan {
+  .advice-form .main-heading{
+    position: relative;
+    &:before {
+      content: '';
+      height: 1px;
+      width: 20vw;
+      position: absolute;
+      top: 10px;
+      left: -25.5vw;
+      background-color: #000;
+    }
   }
 }

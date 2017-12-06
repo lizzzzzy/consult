@@ -4,7 +4,7 @@
 
 {% block body %}
   {% include 'modules/header.twig' with {class: 'header--black'} %}
-  {% include 'about/banner.twig' %}
+  {% include 'blocks/banner.twig' with {image: 'assets/frontend/img/about/about_banner.jpg', heading:'Perkulimov Consulting Group', text: 'Консалтинговая компания, созданая для решения финансовых задач частных лиц и бизнеса, сохранения и приумножения личного капитала'}%}
   {% include 'about/company.twig' %}
   {% include 'blocks/partners.twig' %}
   {% include 'blocks/advice-form.twig' %}

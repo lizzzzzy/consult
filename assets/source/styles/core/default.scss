@@ -29,7 +29,7 @@ html {
 }
 body {
   font-family: $deafult-font;
-  font-weight: 400l;
+  font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.2;
@@ -53,4 +53,25 @@ h6 {
 
 a {
   text-decoration: none;
+}
+.ul {
+  font-size: $big-font-size;
+  font-family: $lora-font;
+  list-style: none;
+  li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $gold;
+      position: absolute;
+      left: 5px;
+      top: 15px;
+    }
+  }
 }

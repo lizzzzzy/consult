@@ -1,0 +1,13 @@
+.how-work {
+  text-align: left;
+  padding-left: 7%;
+  padding-right: 7%;
+  .main-heading {
+    margin-bottom: 52px;
+  }
+  &__text {
+    font-family: $lora-font;
+    font-size: $big-font-size;
+    margin-bottom: 30px;
+  }
+}
