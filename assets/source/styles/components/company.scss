@@ -1,0 +1,43 @@
+.company {
+  text-align: left;
+  font-family: $lora-font;
+  margin-bottom: 84px;
+  padding-left: 6%;
+  &__desc {
+    color: $gold;
+    font-size: $big-font-size;
+    font-weight: 400;
+    margin-left: -135px;
+    &:before {
+      content: '';
+      height: 1px;
+      width: 20vw;
+      position: absolute;
+      top: 10px;
+      left: -25.5vw;
+      background-color: #000;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 47px;
+  }
+  .main-heading {
+    margin-bottom: 28px;
+  }
+  &__block {
+    width: 50%;
+    margin-bottom: 35px;
+    p {
+      padding-right: 25%;
+    }
+  }
+  p {
+    font-size: $default-font-size;
+    margin-bottom: 35px;
+  }
+  &__text {
+    width: 100%;
+  }
+}

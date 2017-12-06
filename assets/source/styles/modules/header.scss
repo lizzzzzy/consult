@@ -1,30 +1,34 @@
 .header {
-	padding-top: 48px;
-	padding-bottom: 50px;
-	.container {
-		display: flex;
-		justify-content: space-between;
-	}
-	nav{
-			margin-left: 4vw;
-			max-width: 70%;
-	}
-	&__logo {
-		color: $gold;
-		font-family: "Vogue Highline Serif";
-		font-size: $default-font-size;
-		font-weight: 500;
-		align-content: center;
-		align-items: center;
-		display: flex;
-//		padding-left: 88px;
-		max-width: 248px;
-		text-align: left;
-		img{
-			margin-top: -25px;
-			margin-right: 15px;
-		}
-	}
-	.navigation {}
-	&__contacts {}
+  padding-top: 48px;
+  padding-bottom: 32px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    margin-left: 4vw;
+    max-width: 70%;
+  }
+  &__logo {
+    color: $gold;
+    font-family: "Vogue Highline Serif";
+    font-size: $default-font-size;
+    font-weight: 500;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    //		padding-left: 88px;
+    max-width: 248px;
+    text-align: left;
+    img {
+      margin-top: -25px;
+      margin-right: 15px;
+    }
+  }
+  .navigation {}
+  &__contacts {}
+  &--black {
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.29);
+    background-color: #111111;
+  }
 }

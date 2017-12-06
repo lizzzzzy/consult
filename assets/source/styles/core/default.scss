@@ -29,7 +29,7 @@ html {
 }
 body {
   font-family: $deafult-font;
-  font-weight: normal;
+  font-weight: 400l;
   font-style: normal;
   font-size: 14px;
   line-height: 1.2;
@@ -37,7 +37,7 @@ body {
   color: #fff;
   background-color: $gray;
 }
-.body{
+.body {
   overflow: hidden;
 }
 h1,
@@ -46,11 +46,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $deafult-font;
+  font-family: $lora-font;
 }
+
 /* Ссылки без дефолтного подчёркивания */
 
 a {
   text-decoration: none;
 }
-

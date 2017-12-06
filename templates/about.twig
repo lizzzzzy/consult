@@ -1,13 +1,11 @@
 {% extends "core/layout.twig" %}
 {% set title = "Perkulimov Consult Group" %}
-{% set class = "frontpage" %}
+{% set class = "about" %}
 
 {% block body %}
-  {% include 'modules/header.twig' %}
-  {% include 'frontpage/seminar-slider.twig' %}
-  {% include 'frontpage/modules.twig' %}
-  {% include 'frontpage/advantages.twig' %}
-  {% include 'frontpage/team.twig' %}
+  {% include 'modules/header.twig' with {class: 'header--black'} %}
+  {% include 'about/banner.twig' %}
+  {% include 'about/company.twig' %}
   {% include 'blocks/partners.twig' %}
   {% include 'blocks/advice-form.twig' %}
   {% include 'modules/footer.twig' %}
