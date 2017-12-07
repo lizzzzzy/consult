@@ -13,7 +13,7 @@
   }
 }
 .fin-plan {
-  .advice-form .main-heading{
+  .advice-form .main-heading {
     position: relative;
     &:before {
       content: '';
@@ -24,5 +24,12 @@
       left: -25.5vw;
       background-color: #000;
     }
+  }
+}
+.team-member section {
+  text-align: left;
+  p {
+    font-size: $big-font-size;
+    font-family: $lora-font;
   }
 }

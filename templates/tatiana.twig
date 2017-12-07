@@ -1,0 +1,27 @@
+{% extends "core/layout.twig" %}
+{% set title = "Perkulimov Consult Group" %}
+{% set class = "team-member" %}
+
+{% block body %}
+  {% include 'modules/header.twig' with {class: 'header--black'} %}
+  {% include 'blocks/banner.twig' with {image: 'assets/frontend/img/team/banner_tatiana.jpg', heading:'Татьяна Тищенко', text: 'Независимый финансовый советник', phone: '+7 (495) 215-25-32', mail: 'info@mideliya.com'}%}
+<section class="container container--small member">
+   <h2 class="member__desc desc">Наша команда</h2>
+    <h3 class="main-heading">Независимый финансовый советник</h3>
+    <p>Профессионализм:</p>
+  <ul class="ul">
+    <li>Сертифицированный независимый финансовый советник 
+(сертификат №15/НФС/290 от 04.03.2017г.);</li>
+    <li>Повышение квалификации по программе дополнительного профессионального образования «Методика личного финансового консультирования». </li>
+    <li>Удостоверение 15/НФС/290 от 04.03.2017;</li>
+    <li>Практикующий эксперт по вопросам управления личными финансами, 
+долгосрочным инвестициям, страхованию;</li>
+    <li>10 лет опыта в страховом и банковском сегменте. Работала на ведущих позициях 
+в крупных российских и международных компаниях;</li>
+    <li>Автор и коуч тренингов и семинаров по эффективному управлению 
+личными финансами и повышению финансовой грамотности;</li>
+  </ul>
+</section>
+  {% include 'blocks/advice-form.twig' %}
+  {% include 'modules/footer.twig' %}
+{% endblock %}

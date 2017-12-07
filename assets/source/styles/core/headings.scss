@@ -4,3 +4,17 @@
   font-size: $heading-font-size;
   font-weight: 700;
 }
+.desc{
+      color: $gold;
+    font-size: $big-font-size;
+    font-weight: 400;
+    &:before {
+      content: '';
+      height: 1px;
+      width: 20vw;
+      position: absolute;
+      top: 10px;
+      left: -25.5vw;
+      background-color: #000;
+    }
+}

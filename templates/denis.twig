@@ -1,0 +1,63 @@
+{% extends "core/layout.twig" %} 
+{% set title = "Perkulimov Consult Group" %} 
+{% set class = "team-member" %} 
+
+{% block body %} 
+{% include 'modules/header.twig' with {class: 'header--black'} %} 
+{% include 'blocks/banner.twig' with {image: 'assets/frontend/img/team/banner_denis.jpg', heading:'Денис Клюковский', text: 'Управляющий партнер <br> Независимый финансовый советник', phone: '+7 (495) 215-25-32', mail: 'info@mideliya.com'}%}
+<section class="container container--small member">
+  <h2 class="team__desc desc">Наша команда</h2>
+  <h3 class="main-heading">Независимый финансовый советник</h3>
+  <p>Опыт работы:</p>
+  <p>
+    13 лет в финансовой сфере. Работал на ТОП позициях в крупных российских и международных банках, инвестиционных и страховых компаниях («Ситибанк», «СК «Альянс Жизнь», «Нордеа банк», «Промсвязьбанк», «БКС»).
+  </p>
+  <p>
+    Построил карьеру с младшего специалиста до руководителя отдельного направления инвестиционной компании. В настоящий момент независимый консультант по управлению личными финансами и управляющий партнер Mideliya Investment Partners</p>
+  <ul class="ul">
+    <li>Сертифицированный независимый финансовый советник (сертификат №12/НФС/055 от 18.04.2012 года);</li>
+    <li>Консультант по повышению финансовой грамотности проекта Министерства Финансов РФ;</li>
+    <li>Приглашенный эксперт «Национального центра финансовой грамотности»;</li>
+    <li>Приглашенный спикер на телеканалах «ОТР», «Домашний очаг»;</li>
+  </ul>
+  <h3 class="main-heading">Образование</h3>
+  <img src="assets/frontend/img/team/shema.png" alt="">
+  <h3 class="main-heading">Специализация:</h3>
+  <p>Помощь в управлении личными финансами, создании и сохранении семейного капитала. Решаю задачи:</p>
+  <ul>
+    <li>Как правильно вести семейный бюджет;</li>
+    <li>Как создать капитал на образование детей;</li>
+    <li>Как обеспечить себя пассивным доходом или пенсионным капиталом;</li>
+    <li>Как правильно формировать инвестиционный портфель и заниматься инвестированием;</li>
+    <li>Как обеспечить финансовую защиту семье от несчастных случаев и потери дохода основного кормильца;</li>
+    <li>Как защитить свои активы от притязаний третьих лиц (раздел при разводе, арест, конфискация)</li>
+    <li>Как правильно передать капитал и активы в наследство </li>
+  </ul>
+</section>
+      <input type="radio" class="slide-btn" id="btn-1" name="toggle" checked>
+      <input type="radio" class="slide-btn" id="btn-2" name="toggle">
+      <input type="radio" class="slide-btn" id="btn-3" name="toggle">
+      <input type="radio" class="slide-btn" id="btn-4" name="toggle">
+      <input type="radio" class="slide-btn" id="btn-5" name="toggle">
+<div class="rewards rates">
+  <div class="container container--small">
+    <h3 class="main-heading">Награды</h3>
+    <p class="rates__subheading">Все наши специалисты обладают большим опытом в решении финансовых проблем.Просто познакомьтесь с ними поближе.</p>
+    <div class="rewards-controls">
+      <label for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+      <label for="btn-4"></label>
+      <label for="btn-5"></label>
+    </div>
+    <div class="rewards-slider">
+      <div class="reward-slide" id="slide1"><img src="assets/frontend/img/team/sert_1.jpg" alt=""></div>
+      <div class="reward-slide" id="slide2"><img src="assets/frontend/img/team/sert_2.jpg" alt=""></div>
+      <div class="reward-slide" id="slide3"><img src="assets/frontend/img/team/sert_3.jpg" alt=""></div>
+      <div class="reward-slide" id="slide4"><img src="assets/frontend/img/team/sert_4.jpg" alt=""></div>
+      <div class="reward-slide" id="slide5"><img src="assets/frontend/img/team/sert_5.jpg" alt=""></div>
+    </div>
+  </div>
+  {% include 'blocks/advice-form.twig' %} 
+  {% include 'modules/footer.twig' %} 
+  {% endblock %}

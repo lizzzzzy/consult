@@ -4,19 +4,7 @@
   margin-bottom: 94px;
   padding-left: 6%;
   &__desc {
-    color: $gold;
-    font-size: $big-font-size;
-    font-weight: 400;
     margin-left: -135px;
-    &:before {
-      content: '';
-      height: 1px;
-      width: 20vw;
-      position: absolute;
-      top: 10px;
-      left: -25.5vw;
-      background-color: #000;
-    }
   }
   &__wrap {
     margin-top: 45px;
@@ -28,7 +16,7 @@
     font-size: $big-font-size;
     margin-bottom: 27px;
   }
-  &__img{
+  &__img {
     margin-top: 30px;
     margin-bottom: 45px;
   }
