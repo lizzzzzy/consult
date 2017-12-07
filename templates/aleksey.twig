@@ -1,0 +1,22 @@
+{% extends "core/layout.twig" %}
+{% set title = "Perkulimov Consult Group" %}
+{% set class = "team-member" %}
+
+{% block body %}
+  {% include 'modules/header.twig' with {class: 'header--black'} %}
+  {% include 'blocks/banner.twig' with {image: 'assets/frontend/img/team/banner_valerii.jpg', heading:'Валерий Кучеров', text: 'Независимый финансовый советник', phone: '+7 (495) 215-25-32', mail: 'info@mideliya.com', adress:'125047, г. Москва, 4 Лесной переулок, д.4. 
+     м. Белорусская (3 минуты пешком от метро)'}%}
+<section class="container container--small member">
+   <h2 class="member__desc desc">Наша команда</h2>
+    <h3 class="main-heading">Независимый финансовый советник</h3>
+    <p>Профессионализм:</p>
+  <ul class="ul">
+    <li>Сертифицированный независимый финансовый советник 
+(сертификат 15/НФС/305 от 30.04.2017 г.);</li>
+    <li>Повышение квалификации по программе дополнительного профессионального образования «Методика личного финансового консультирования»;</li>
+    <li>Более 20-ти лет опыта работы в сфере учёта и управления финансами предприятий различных сфер деятельности и форм собственности;</li>
+  </ul>
+</section>
+  {% include 'blocks/advice-form.twig' %}
+  {% include 'modules/footer.twig' %}
+{% endblock %}
