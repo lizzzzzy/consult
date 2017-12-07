@@ -38,6 +38,11 @@
       color: #fff;
       margin-bottom: 20px;
       display: block;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $gold;
+      }
     }
     p {}
   }
@@ -48,6 +53,11 @@
       font-family: $lora-font;
       font-size: $small-font-size;
       font-weight: 400;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
     }
   }
   &__social {}
