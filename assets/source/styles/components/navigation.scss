@@ -7,6 +7,11 @@
 		font-weight: 400;
 		color: #fff;
 		margin-right: 3vw;
+		&:hover,
+	    &:focus,
+	    &:active {
+	      color: $gold;
+	    }
 	}
 	li:last-child a {
 		margin-right: 0;

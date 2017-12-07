@@ -14,7 +14,7 @@
   }
   &__logo {
     display: flex;
-        align-items: flex-start;
+    align-items: flex-start;
     img {
       margin-right: 16px;
     }
@@ -24,6 +24,11 @@
     font-family: $lora-font;
     max-width: 240px;
     padding-top: 6px;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
   }
   nav{
     margin-top: 6px;
