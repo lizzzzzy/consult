@@ -72,5 +72,8 @@
   &:focus,
   &:active {
     color: #fff;
+    &::after {
+      background-image: url("../img/Strelka-white.png");
+    }
   }
 }
