@@ -14,6 +14,9 @@
     font-size: $large-font-size;
     color: $gold;
   }
+  &__title--education {
+    margin-top: 35px;
+  }
   p {
     margin-bottom: 25px;
     font-size: $big-font-size;
@@ -44,7 +47,7 @@
   }
   &__scheme {
     /*компенсирует большой размер картинки-схемы*/
-    height: 490px;
+    height: 560px;
     overflow: hidden;
     img {
       position: relative;
