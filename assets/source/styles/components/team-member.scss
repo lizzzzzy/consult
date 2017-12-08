@@ -1,0 +1,17 @@
+.team-member{
+  .advice-form {
+    margin-top: 40px;
+  }
+  .main-heading{
+    font-size: $large-font-size;
+    &::before{
+      content: '';
+      height: 1px;
+      width: 30vw;
+      position: absolute;
+      top: 10px;
+      left: -25.5vw;
+      background-color: #000;
+    }
+   }
+ }
