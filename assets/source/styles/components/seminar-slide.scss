@@ -106,5 +106,10 @@
       background-repeat: no-repeat;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAHCAYAAAAWAl2LAAAAcklEQVQoU2NkoAGYVuEt+OvP37v/Gf6HFfbs3AOygpEG9oCNnFDiWc7A8L/jP8N/V5BlNLMI3TKwRb0l3v9p5TNmhn9nGRj+K9HUR/2lHjMZ/zOEMv7/50ozi5Atye/ddZYmFkFS3b/djP//poMsAUULAAnENE1aSW3iAAAAAElFTkSuQmCC);
     }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
   }
 }

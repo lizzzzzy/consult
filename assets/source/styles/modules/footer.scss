@@ -14,7 +14,7 @@
   }
   &__logo {
     display: flex;
-        align-items: flex-start;
+    align-items: flex-start;
     img {
       margin-right: 16px;
     }
@@ -24,6 +24,11 @@
     font-family: $lora-font;
     max-width: 240px;
     padding-top: 6px;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
   }
   nav{
     margin-top: 6px;
@@ -38,6 +43,11 @@
       color: #fff;
       margin-bottom: 20px;
       display: block;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $gold;
+      }
     }
     p {}
   }
@@ -48,6 +58,11 @@
       font-family: $lora-font;
       font-size: $small-font-size;
       font-weight: 400;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+      }
     }
   }
   &__social {}

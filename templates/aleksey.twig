@@ -1,0 +1,25 @@
+{% extends "core/layout.twig" %}
+{% set title = "Perkulimov Consult Group" %}
+{% set class = "team-member" %}
+
+{% block body %}
+  {% include 'modules/header.twig' with {class: 'header--black'} %}
+  {% include 'blocks/banner.twig' with {image: 'assets/frontend/img/team/.jpg', heading:'Алексей Перкулимов', text: 'Инвестор, предприниматель', phone: '+7 (495) 142-65-99', mail: 'consult@perkulimov.ru'}%}
+<section class="container container--small member">
+   <h2 class="member__desc desc">Наша команда</h2>
+    <h3 class="member__title">Инвестор, предприниматель</h3>
+    <p>Профессионализм:</p>
+    <ul class="member__list">
+      <li>10 лет успешной работы в собственных бизнесах</li>
+      <li>Владелец консалтинговой компании «Perkulimov Consulting Group» </li>
+      <li>Автор и методолог практического курса «Быстрые деньги в консалтинге</li>
+      <li>Автор и методолог практического курса «Финансовый ДНК 2.0»</li>
+      <li>Ключевые компетенции: психология влияния, бизнес-консалтинг, продажи и переговоры</li>
+      <li>Сторонник исключительно практической модели обучения Проходил обучение у многих ведущих экспертов по маркетингу и продажам России и мира</li>
+      <li>До того, как стал заниматься консалтингом, успел поработать во многих сферах бизнеса, а главное — накопить уникальный опыт. </li>
+      <li>Учредитель ассоциации независимых бизнес-консультантов г. Москвы</li>
+    </ul>
+</section>
+  {% include 'blocks/advice-form.twig' %}
+  {% include 'modules/footer.twig' %}
+{% endblock %}

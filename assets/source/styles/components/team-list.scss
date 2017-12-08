@@ -1,19 +1,64 @@
 .team-list {
   list-style: none;
   margin-top: 125px;
-  li {
-    display: flex;
+  li {    
     margin-bottom: 77px;
     font-size: $big-font-size;
   }
+  &__link {
+    display: flex;
+    color: inherit;
+  }
   &__img {
+    width: 137px;
+    height: 137px;
     margin-right: 45px;
-    img {}
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__img--aleksey {
+    background-image: url("../img/komanda_0.png");
+  }
+  &__img--valerii {
+    background-image: url("../img/komanda_1.png");
+  }
+  &__img--tatiana {
+    background-image: url("../img/komanda_2.png");
+  }
+  &__img--altinai {
+    background-image: url("../img/komanda_3.png");
+  }
+  &__img--denis {
+    background-image: url("../img/komanda_4.png");
   }
   &__text {
-    margin-top: 27px;
-    p {
-      margin-bottom: 28px;
-    }
+    margin-top: 14px; 
+  }
+  &__name {
+    margin-bottom: 20px;
+    color: $gold;
+  }
+}
+
+.team-list__link:hover,
+.team-list__link:focus {
+  .team-list__text{
+    color: $gold;
+  }
+  .team-list__img--aleksey {
+    background-image: url("../img/komanda_0-colored.png");
+  }
+  .team-list__img--valerii {
+    background-image: url("../img/komanda_1-colored.png");
+  }
+  .team-list__img--tatiana {
+    background-image: url("../img/komanda_2-colored.png");
+  }
+  .team-list__img--altinai {
+    background-image: url("../img/komanda_3-colored.png");
+  }
+  .team-list__img--denis {
+    background-image: url("../img/komanda_4-colored.png");
   }
 }

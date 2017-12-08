@@ -2,9 +2,25 @@
   display: flex;
   list-style: none;
   &__item{
+  	position: relative ;
     max-width: 336px;
     &:hover{
       transform: scale(1.03);
+      z-index: 2;
+      box-shadow: 0 11px 18px 4px rgba(0, 0, 0, 0.38);
+      &::after {
+      	display: none;
+      }
     }
+  }
+  .partners-slider__item::after {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
 }

@@ -11,6 +11,10 @@
     margin-top: 105px;
     margin-bottom: 100px;
   }
+  .banner__phone::before,
+  .banner__mail::before {
+    display: none;
+  }
 }
 .fin-plan {
   .advice-form .main-heading {
@@ -24,12 +28,5 @@
       left: -25.5vw;
       background-color: #000;
     }
-  }
-}
-.team-member section {
-  text-align: left;
-  p {
-    font-size: $big-font-size;
-    font-family: $lora-font;
   }
 }

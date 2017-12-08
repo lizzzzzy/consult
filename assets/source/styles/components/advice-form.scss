@@ -27,9 +27,21 @@
   font-size: $big-font-size;
   font-weight: 400;
   border-bottom: 1px solid #fff;
-  padding-bottom: 26px;
-  color: #fff;
+  padding-bottom: 22px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: $gold;
   margin-bottom: 40px;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $gold;
+    outline: none;
+  }
+  &::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
 }
 .button {
   font-family: $lora-font;
@@ -55,5 +67,13 @@
     right: -125px;
     top: 6px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAARCAYAAABU3BvXAAAA1klEQVRYR+3YsQ3CMBAF0PvZgFkoaaFjgWQAkJiASUBhAMQAIAp6OlZgBSYIFxkJ0ZD4kO5o8j3AP+n5y7IN4XITOG6qcVHoBZB702A2X+0fXeFwm8ogOW3LhD5NFIDc+vAJ71iYd+NFZJTDJ7wjfIqy4hPeGd6KT/gAeAs+4YPgc/hQFVwPy2fg/IFGq07KXdF15rPxf6jFua4Wqlp/RmFN+GB4Nj4Y+Ft839WSjQ/akNx9nvAB8Dn016s2YO6gIy3ohHeuiBWd8M7w/J10BrXG/fIf3wJ/pZebWFOPGwAAAABJRU5ErkJggg==);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    &::after {
+      background-image: url("../img/Strelka-white.png");
+    }
   }
 }

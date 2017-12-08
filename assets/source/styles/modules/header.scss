@@ -6,7 +6,7 @@
     justify-content: space-between;
   }
   nav {
-    margin-left: 4vw;
+    margin-left: 1.3vw;
     max-width: 70%;
   }
   &__logo {
@@ -23,6 +23,11 @@
     img {
       margin-top: -25px;
       margin-right: 15px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
     }
   }
   .navigation {}
